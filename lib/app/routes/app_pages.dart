@@ -2,6 +2,10 @@ import 'package:get/get.dart';
 
 import '../modules/bidangpandang/bindings/bidangpandang_binding.dart';
 import '../modules/bidangpandang/views/bidangpandang_view.dart';
+import '../modules/bluring/bindings/bluring_binding.dart';
+import '../modules/bluring/views/bluring_view.dart';
+import '../modules/bluringtips/bindings/bluringtips_binding.dart';
+import '../modules/bluringtips/views/bluringtips_view.dart';
 import '../modules/dasarfotografi/bindings/dasarfotografi_binding.dart';
 import '../modules/dasarfotografi/views/dasarfotografi_view.dart';
 import '../modules/gunacamera/bindings/gunacamera_binding.dart';
@@ -20,6 +24,12 @@ import '../modules/pencahayaan/bindings/pencahayaan_binding.dart';
 import '../modules/pencahayaan/views/pencahayaan_view.dart';
 import '../modules/sudutpandang/bindings/sudutpandang_binding.dart';
 import '../modules/sudutpandang/views/sudutpandang_view.dart';
+import '../modules/zooming/bindings/zooming_binding.dart';
+import '../modules/zooming/views/zooming_view.dart';
+import '../modules/zoomingharus/bindings/zoomingharus_binding.dart';
+import '../modules/zoomingharus/views/zoomingharus_view.dart';
+import '../modules/zoomingteknik/bindings/zoomingteknik_binding.dart';
+import '../modules/zoomingteknik/views/zoomingteknik_view.dart';
 
 part 'app_routes.dart';
 
@@ -78,6 +88,31 @@ class AppPages {
       name: _Paths.PENCAHAYAAN,
       page: () => PencahayaanView(),
       binding: PencahayaanBinding(),
+    ),
+    GetPage(
+      name: _Paths.ZOOMING,
+      page: () => ZoomingView(),
+      binding: ZoomingBinding(),
+    ),
+    GetPage(
+      name: _Paths.ZOOMINGHARUS,
+      page: () => ZoomingharusView(),
+      binding: ZoomingharusBinding(),
+    ),
+    GetPage(
+      name: _Paths.ZOOMINGTEKNIK,
+      page: () => ZoomingteknikView(),
+      binding: ZoomingteknikBinding(),
+    ),
+    GetPage(
+      name: _Paths.BLURING,
+      page: () => BluringView(),
+      binding: BluringBinding(),
+    ),
+    GetPage(
+      name: _Paths.BLURINGTIPS,
+      page: () => BluringtipsView(),
+      binding: BluringtipsBinding(),
     ),
   ];
 }

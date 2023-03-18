@@ -13,6 +13,11 @@ abstract class Routes {
   static const SUDUTPANDANG = _Paths.SUDUTPANDANG;
   static const BIDANGPANDANG = _Paths.BIDANGPANDANG;
   static const PENCAHAYAAN = _Paths.PENCAHAYAAN;
+  static const ZOOMING = _Paths.ZOOMING;
+  static const ZOOMINGHARUS = _Paths.ZOOMINGHARUS;
+  static const ZOOMINGTEKNIK = _Paths.ZOOMINGTEKNIK;
+  static const BLURING = _Paths.BLURING;
+  static const BLURINGTIPS = _Paths.BLURINGTIPS;
 }
 
 abstract class _Paths {
@@ -27,4 +32,9 @@ abstract class _Paths {
   static const SUDUTPANDANG = '/sudutpandang';
   static const BIDANGPANDANG = '/bidangpandang';
   static const PENCAHAYAAN = '/pencahayaan';
+  static const ZOOMING = '/zooming';
+  static const ZOOMINGHARUS = '/zoomingharus';
+  static const ZOOMINGTEKNIK = '/zoomingteknik';
+  static const BLURING = '/bluring';
+  static const BLURINGTIPS = '/bluringtips';
 }

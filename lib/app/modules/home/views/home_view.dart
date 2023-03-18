@@ -300,68 +300,74 @@ class HomeView extends GetView<HomeController> {
                 Container(
                   width: Get.width * 0.42,
                   height: 82,
-                  child: Card(
-                    clipBehavior: Clip.antiAlias,
-                    color: Color(0xFF0C88AE),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Stack(
-                      alignment: Alignment.centerLeft,
-                      children: [
-                        Ink.image(
-                          image: AssetImage('assets/home/card3.png'),
-                          fit: BoxFit.cover,
-                          child: InkWell(
-                            onTap: () {},
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Text(
-                            'Zooming',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white,
-                              fontSize: 14,
+                  child: GestureDetector(
+                    onTap: () => Get.toNamed(Routes.ZOOMING),
+                    child: Card(
+                      clipBehavior: Clip.antiAlias,
+                      color: Color(0xFF0C88AE),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Stack(
+                        alignment: Alignment.centerLeft,
+                        children: [
+                          Ink.image(
+                            image: AssetImage('assets/home/card3.png'),
+                            fit: BoxFit.cover,
+                            child: InkWell(
+                              onTap: () => Get.toNamed(Routes.ZOOMING),
                             ),
                           ),
-                        ),
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              'Zooming',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Container(
                   width: Get.width * 0.42,
                   height: 82,
-                  child: Card(
-                    clipBehavior: Clip.antiAlias,
-                    color: Color(0xFF0C88AE),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Stack(
-                      alignment: Alignment.centerLeft,
-                      children: [
-                        Ink.image(
-                          image: AssetImage('assets/home/card6.png'),
-                          fit: BoxFit.cover,
-                          child: InkWell(
-                            onTap: () {},
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Text(
-                            'Bluring',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white,
-                              fontSize: 14,
+                  child: GestureDetector(
+                    onTap: () => Get.toNamed(Routes.BLURING),
+                    child: Card(
+                      clipBehavior: Clip.antiAlias,
+                      color: Color(0xFF0C88AE),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Stack(
+                        alignment: Alignment.centerLeft,
+                        children: [
+                          Ink.image(
+                            image: AssetImage('assets/home/card6.png'),
+                            fit: BoxFit.cover,
+                            child: InkWell(
+                              onTap: () => Get.toNamed(Routes.BLURING),
                             ),
                           ),
-                        ),
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              'Bluring',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
