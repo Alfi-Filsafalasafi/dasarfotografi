@@ -10,124 +10,132 @@ class GunacameraprinsipkerjaView
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: 50),
-              Row(
-                children: [
-                  Container(
-                    height: 27,
-                    width: 34,
-                    child: Image.asset("assets/home/logo.png"),
-                  ),
-                  SizedBox(width: 24),
-                  Text(
-                    "Fotografi Dasar",
-                    style: TextStyle(
-                        color: Color(0xFF393939),
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16),
-                  ),
-                ],
-              ),
-              SizedBox(height: 33),
-              Text(
-                "Menggunakan camera",
-                style: TextStyle(
-                    color: Color(0xFF393939),
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20),
-              ),
-              SizedBox(height: 20),
-              Container(
-                height: 30,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
+      body: Column(
+        children: [
+          SizedBox(height: 25),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    GestureDetector(
-                      onTap: () => Get.toNamed(Routes.GUNACAMERA),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white,
-                          border: Border.all(
-                            color: Color(0xFF264653),
-                          ),
+                    SizedBox(height: 25),
+                    Row(
+                      children: [
+                        Container(
+                          height: 27,
+                          width: 34,
+                          child: Image.asset("assets/home/logo.png"),
                         ),
-                        height: 29,
-                        width: 34,
-                        child: Image.asset("assets/icon/homeinac.png"),
-                      ),
+                        SizedBox(width: 24),
+                        Text(
+                          "Fotografi Dasar",
+                          style: TextStyle(
+                              color: Color(0xFF393939),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16),
+                        ),
+                      ],
                     ),
-                    SizedBox(width: 10),
+                    SizedBox(height: 33),
+                    Text(
+                      "Menggunakan camera",
+                      style: TextStyle(
+                          color: Color(0xFF393939),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20),
+                    ),
+                    SizedBox(height: 20),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 11),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xFF264653),
-                      ),
-                      height: 29,
-                      child: Center(
-                        child: Text(
-                          "Prinsip Kerja",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    GestureDetector(
-                      onTap: () => Get.toNamed(Routes.GUNACAMERAJENIS),
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 11),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Color(0xFF264653),
-                            )),
-                        height: 29,
-                        child: Center(
-                          child: Text(
-                            "Jenis-Jenis",
-                            style: TextStyle(color: Color(0xFF393939)),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    GestureDetector(
-                      onTap: () => Get.toNamed(Routes.GUNACAMERAAKSESORIS),
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 11),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Color(0xFF264653),
-                            )),
-                        height: 29,
-                        child: Center(
-                          child: Text(
-                            "Aksesoris",
-                            style: TextStyle(
-                              color: Color(0xFF264653),
+                      height: 30,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          GestureDetector(
+                            onTap: () => Get.toNamed(Routes.GUNACAMERA),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.white,
+                                border: Border.all(
+                                  color: Color(0xFF264653),
+                                ),
+                              ),
+                              height: 29,
+                              width: 34,
+                              child: Image.asset("assets/icon/homeinac.png"),
                             ),
                           ),
-                        ),
+                          SizedBox(width: 10),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 11),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xFF264653),
+                            ),
+                            height: 29,
+                            child: Center(
+                              child: Text(
+                                "Prinsip Kerja",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          GestureDetector(
+                            onTap: () => Get.toNamed(Routes.GUNACAMERAJENIS),
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 11),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.white,
+                                  border: Border.all(
+                                    color: Color(0xFF264653),
+                                  )),
+                              height: 29,
+                              child: Center(
+                                child: Text(
+                                  "Jenis-Jenis",
+                                  style: TextStyle(color: Color(0xFF393939)),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          GestureDetector(
+                            onTap: () =>
+                                Get.toNamed(Routes.GUNACAMERAAKSESORIS),
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 11),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.white,
+                                  border: Border.all(
+                                    color: Color(0xFF264653),
+                                  )),
+                              height: 29,
+                              child: Center(
+                                child: Text(
+                                  "Aksesoris",
+                                  style: TextStyle(
+                                    color: Color(0xFF264653),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
                       ),
-                    )
+                    ),
+                    SizedBox(height: 15),
+                    konten(),
                   ],
                 ),
               ),
-              SizedBox(height: 15),
-              konten(),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

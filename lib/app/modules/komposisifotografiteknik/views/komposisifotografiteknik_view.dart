@@ -269,7 +269,7 @@ class filltheframe extends StatelessWidget {
           child: Container(
             width: Get.width,
             child: Image.asset(
-                "assets/image/komposisifotografi/komposisifotosimetri.jpg",
+                "assets/image/komposisifotografi/filltheflame.jpg",
                 fit: BoxFit.contain),
           ),
         ),
@@ -392,7 +392,7 @@ class ruleofspace extends StatelessWidget {
           child: Container(
             width: Get.width,
             child: Image.asset(
-                "assets/image/komposisifotografi/komposisifotosimetri.jpg",
+                "assets/image/komposisifotografi/ruleofspace.jpg",
                 fit: BoxFit.contain),
           ),
         ),
