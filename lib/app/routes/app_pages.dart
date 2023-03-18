@@ -18,6 +18,10 @@ import '../modules/gunacameraprinsipkerja/bindings/gunacameraprinsipkerja_bindin
 import '../modules/gunacameraprinsipkerja/views/gunacameraprinsipkerja_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/komposisifotografi/bindings/komposisifotografi_binding.dart';
+import '../modules/komposisifotografi/views/komposisifotografi_view.dart';
+import '../modules/komposisifotografiteknik/bindings/komposisifotografiteknik_binding.dart';
+import '../modules/komposisifotografiteknik/views/komposisifotografiteknik_view.dart';
 import '../modules/metering/bindings/metering_binding.dart';
 import '../modules/metering/views/metering_view.dart';
 import '../modules/pencahayaan/bindings/pencahayaan_binding.dart';
@@ -113,6 +117,16 @@ class AppPages {
       name: _Paths.BLURINGTIPS,
       page: () => BluringtipsView(),
       binding: BluringtipsBinding(),
+    ),
+    GetPage(
+      name: _Paths.KOMPOSISIFOTOGRAFI,
+      page: () => KomposisifotografiView(),
+      binding: KomposisifotografiBinding(),
+    ),
+    GetPage(
+      name: _Paths.KOMPOSISIFOTOGRAFITEKNIK,
+      page: () => KomposisifotografiteknikView(),
+      binding: KomposisifotografiteknikBinding(),
     ),
   ];
 }

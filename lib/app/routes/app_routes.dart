@@ -18,6 +18,8 @@ abstract class Routes {
   static const ZOOMINGTEKNIK = _Paths.ZOOMINGTEKNIK;
   static const BLURING = _Paths.BLURING;
   static const BLURINGTIPS = _Paths.BLURINGTIPS;
+  static const KOMPOSISIFOTOGRAFI = _Paths.KOMPOSISIFOTOGRAFI;
+  static const KOMPOSISIFOTOGRAFITEKNIK = _Paths.KOMPOSISIFOTOGRAFITEKNIK;
 }
 
 abstract class _Paths {
@@ -37,4 +39,6 @@ abstract class _Paths {
   static const ZOOMINGTEKNIK = '/zoomingteknik';
   static const BLURING = '/bluring';
   static const BLURINGTIPS = '/bluringtips';
+  static const KOMPOSISIFOTOGRAFI = '/komposisifotografi';
+  static const KOMPOSISIFOTOGRAFITEKNIK = '/komposisifotografiteknik';
 }
